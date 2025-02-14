@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockholm-BEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body {
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        .header {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            height: 88px;
+            width: 100vw;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+
+        }
+
+        .logo {
+            width: 131px;
+            height: 23px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 40px;
+            letter-spacing: 2px;
+
+        }
+
+        .nav__item {
+            list-style: none;
+        }
+
+        .nav__item--marked {
+            color: #77875B;
+        }
+
+        .gridContainer {
+            display: grid;
+            /* grid-template-columns: repeat(6, 317.57px);
+            grid-template-rows: repeat(5, 317.57px);
+            grid-gap: 10px; */
+            width: 100vw;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-gap: 10px;
+            padding: 10px;
+
+            
+        }
+
+        .elemento {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .elemento__1 {
+            grid-area: 1 / 1 / 2 / 2;
+            
+        }
+
+        .elemento__2 {
+            grid-area: 1 / 2 / 2 / 3;
+            
+        }
+
+        .elemento__3 {
+            grid-area: 1 / 3 / 3 / 4;
+            
+        }
+
+        .elemento__4 {
+            grid-area: 1 / 4 / 2 / 5;
+            
+        }
+
+        .elemento__5 {
+            grid-area: 1 / 5 / 3 / 7;
+            
+        }
+
+        .elemento__6 {
+            grid-area: 2 / 1 / 3 / 2;
+            
+        }
+
+        .elemento__7 {
+            grid-area: 2 / 2 / 3 / 3;
+            
+        }
+
+        .elemento__8 {
+            grid-area: 2 / 4 / 3 / 5;
+            
+        }
+
+        .elemento__9 {
+            grid-area: 3 / 1 / 5 / 3;
+            
+        }
+
+        .elemento__10 {
+            grid-area: 3 / 4 / 4 / 5;
+            
+        }
+
+        .elemento__11 {
+            grid-area: 3 / 3 / 4 / 4;
+            
+        }
+
+        .elemento__12 {
+            grid-area: 3 / 5 / 5 / 6;
+            
+        }
+
+        .elemento__13 {
+            grid-area: 3 / 6 / 4 / 7;
+            
+        }
+
+        .elemento__14 {
+            grid-area: 4 / 4 / 5 / 5;
+            
+        }
+
+        .elemento__15 {
+            grid-area: 4 / 3 / 5 / 4;
+            
+        }
+
+        .elemento__16 {
+            grid-area: 4 / 6 / 5 / 7;
+            
+        }
+
+        .elemento__17 {
+            grid-area: 5 / 1 / 6 / 3;
+            
+        }
+
+        .elemento__18 {
+            grid-area: 5 / 4 / 6 / 5;
+            
+        }
+
+        .elemento__19 {
+            grid-area: 5 / 3 / 6 / 4;
+            
+        }
+
+        .elemento__20 {
+            grid-area: 5 / 5 / 6 / 6;
+            
+        }
+
+        .elemento__21 {
+            grid-area: 5 / 6 / 6 / 7;
+            
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+
+<body class="body">
+
+    <header class="header">
+
+        <img class="logo" src="./assets/logo-dark.png" alt="Stockholm logo">
+
+        <ul class="nav">
+            <li class="nav__item nav__item--marked"> MAIN </li>
+            <li class="nav__item"> ABOUT </li>
+            <li class="nav__item"> CONTACT </li>
+        </ul>
+
+        <i class="fa fa-bars"></i>
+
+    </header>
+
+    <img src="" alt="">
+
+    <div class="gridContainer">
+        <article class="elemento__1"> <img class="elemento" src="./assets/masonry-list-img-1-500x500.jpg" alt="flor beige"> </article>
+        <article class="elemento__2"> <img class="elemento" src="./assets/masonry-list-img-2-500x500.jpg" alt="Q"> </article>
+        <article class="elemento__3"> <img class="elemento" src="./assets/masonry-list-img-3-500x1000.jpg" alt="hoja alargada"></article>
+        <article class="elemento__4"> <img class="elemento" src="./assets/masonry-list-img-4-500x500.jpg" alt="moma"></article>
+        <article class="elemento__5"> <img class="elemento" src="./assets/masonry-list-img-5-1000x1000.jpg" alt="dos"> </article>
+        <article class="elemento__6"> <img class="elemento" src="./assets/masonry-list-img-6-500x500.jpg" alt="kata"></article>
+        <article class="elemento__7"> <img class="elemento" src="./assets/masonry-list-img-7-500x500.jpg" alt="beauty is in the eye of the observer"></article>
+        <article class="elemento__8"> <img class="elemento" src="./assets/masonry-list-img-8-500x500.jpg" alt="flor blanca"></article>
+        <article class="elemento__9"> <img class="elemento" src="./assets/masonry-list-img-9-1000x1000.jpg" alt="números desordenados"></article>
+        <article class="elemento__10"> <img class="elemento" src="./assets/masonry-list-img-10-500x500.jpg" alt="polilla"></article>
+        <article class="elemento__11"> <img class="elemento" src="./assets/masonry-list-img-11-500x500.jpg" alt="stay close to nature"></article>
+        <article class="elemento__12"> <img class="elemento" src="./assets/masonry-list-img-12-500x1000.jpg" alt="hojas y texto"></article>
+        <article class="elemento__13"> <img class="elemento" src="./assets/masonry-list-img-13-500x500.jpg" alt="into nature is to witness a thousand"></article>
+        <article class="elemento__14"> <img class="elemento" src="./assets/masonry-list-img-14-500x500.jpg" alt="hoja marrón"></article>
+        <article class="elemento__15"> <img class="elemento" src="./assets/masonry-list-img-15-500x500.jpg" alt="soho"></article>
+        <article class="elemento__16"> <img class="elemento" src="./assets/masonry-list-img-16-500x500.jpg" alt="elaf"></article>
+        <article class="elemento__17"> <img class="elemento" src="./assets/masonry-list-img-17-1000x500.jpg" alt="the vow"></article>
+        <article class="elemento__18"> <img class="elemento" src="./assets/masonry-list-img-18-500x500.jpg" alt="prome"></article>
+        <article class="elemento__19"> <img class="elemento" src="./assets/masonry-list-img-19-500x500.jpg" alt="prome"></article>
+        <article class="elemento__20"> <img class="elemento" src="./assets/masonry-list-img-21-500x500.jpg" alt="tromso"></article>
+        <article class="elemento__21"> <img class="elemento" src="./assets/masonry-list-img-20-500x500.jpg" alt="rama"></article>
+        
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer__top"> </div>
+        <div class="footer__bottom"> </div>
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
