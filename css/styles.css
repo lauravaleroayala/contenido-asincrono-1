@@ -46,7 +46,7 @@
     color: #77875B;
 }
 
-.gridContainer {
+.container {
     display: grid;
     width: 100vw;
     grid-template-columns: repeat(6, 1fr);
